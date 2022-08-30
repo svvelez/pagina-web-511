@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <form action="#" id="formulario_enviar" method="POST"
+    <form action="datosUsuario.php" id="formulario_enviar" method="POST"
     class=" w-1/3 p-4 border-gray-100 shadow-xl rounded-lg">
 
     <div class="square" style="--i:0;"></div>
@@ -46,40 +46,40 @@
   <div class="mb-3">
     <label>Fecha de nacimiento:</label>
      <input type="date" class="form-control"
-     placeholder="fechadenacimiento" name="fechadenacimiento" id="fechadenacimiento">
+     placeholder="fechadenacimiento" name="fechadenacimiento" id="fechadenacimiento" >
   </div>
 
   <div class="mb-3">
     <label>Edad:</label>
      <input type="text" class="form-control"
-     placeholder="" name="edad" id="edad">
+     placeholder="" name="edad" id="edad" value="edad">
   </div>
 
   <div class="mb-3">
     <label>Sexo:</label>
      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault1" value="femenino">
         <label class="form-check-label" for="flexRadioDefault1">Femenino</label>
       </div>
 
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <input class="form-check-input" type="radio" name="sexo" id="flexRadioDefault2"value="masculino" >
       <label class="form-check-label" for="flexRadioDefault2"> Masculino </label>
   </div>
 </div>
 
      <div class="mb-3">
         <label>Estado civil:</label>
-      <select class="form-select form-select" aria-label=".form-select-sm example">
+      <select class="form-select form-select" name="estadocivil" aria-label=".form-select-sm example">
           <option selected></option>
-          <option value="1">Casado</option>
-          <option value="2">Soltero</option>
-          <option value="3">Union Libre</option>
+          <option name="estadocivil" value="casado">Casado</option>
+          <option name="estadocivil"  value="soltero">Soltero</option>
+          <option name="estadocivil" value="union libre">Union Libre</option>
         </select>
      </div>
      <div class="mb-3">
         <label>Correo:</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+      <input type="email" name="email" class="form-control" id="email" placeholder="">
     </div>
     
 
@@ -104,7 +104,7 @@
 
 
        
-        <button  type="button" id="enviar">Guardar</button>
+        <button  type="submit" id="enviar">Guardar</button>
 </body>
 </html>
 
